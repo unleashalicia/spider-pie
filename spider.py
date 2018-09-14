@@ -57,7 +57,6 @@ class Spider:
 
   @staticmethod
   def add_links_to_queue( links ):
-    # print( 'Links: ' + links if links else 'False' )
     for url in links:
       if url in Spider.queue:
         continue
