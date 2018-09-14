@@ -27,7 +27,7 @@ def write_file( path, data ):
 # add data onto an existing file
 def append_to_file( path, data ):
   with open( path, 'a' ) as file:
-    file.write( data + '/n' )
+    file.write( data + '\n' )
 
 # delete contents of file
 def delete_file_contents( path ):
@@ -39,7 +39,7 @@ def file_to_set( file_name ):
   results = set()
   with open( file_name, 'rt' ) as f:
     for line in f:
-      results.add( line.replace( '/n', '') )
+      results.add( line.replace( '\n', '') )
   return results
 
 # Iterate through a set.  Each item in set will be a new line in file.
